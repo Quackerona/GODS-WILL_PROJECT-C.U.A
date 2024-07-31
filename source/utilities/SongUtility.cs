@@ -12,9 +12,9 @@ public class SongUtility
 	public static SongData SONG { get; set; }
 
 	public static List<string> difficulties { get; } = new List<string>(){"easy", "normal", "hard"};
-	public static float bpm { get; set; }
-    public static float crochet { get; set; }
-    public static float stepCrochet { get; set; }
+	public static float bpm { get; private set; }
+    public static float crochet { get; private set; }
+    public static float stepCrochet { get; private set; }
     public static float songPosition { get; set; }
 
 	// Player Stats
@@ -28,9 +28,9 @@ public class SongUtility
 	public static List<float> accuracy { get; set; } = new List<float>(){100};
 
 	// Song Metadata
-	public static int curStep { get; set; }
-	public static int curBeat { get; set; }
-	public static int curSection { get; set; }
+	public static int curStep { get; private set; }
+	public static int curBeat { get; private set; }
+	public static int curSection { get; private set; }
 
 	public static BPMChangeEvent bpmChangeMap { get; set; }
 
@@ -64,7 +64,7 @@ public class SongUtility
         stepCrochet = crochet / 4f;
 	}
 
-	public static void ChangeBpmMap()
+	public static void ChangeBpmMap() // never tested, btw
 	{
 		bpmChangeMap.stepTime = 16 * curSection;
 		bpmChangeMap.songTime = 60f / bpm * 1000f / 4f * 16f * curSection;

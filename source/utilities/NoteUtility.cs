@@ -6,7 +6,7 @@ class NotePool
     static int maxCount;
 
     static Dictionary<int, List<Node2D>> pool;
-    public static List<Node2D> activeNotes { get; set; }
+    public static List<Node2D> activeNotes { get; private set; }
 
     public static void Init(int maxPerNote)
     {
