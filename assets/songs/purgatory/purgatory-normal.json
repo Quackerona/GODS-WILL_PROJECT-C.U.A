@@ -1,0 +1,2088 @@
+{
+  "name": "Purgatory",
+  "bpm": 167.0,
+  "speed": 1.26,
+  "keys": 4,
+  "notes": [
+    {
+      "strumTime": 5928.1436,
+      "id": 6,
+      "length": 0.0
+    },
+    {
+      "strumTime": 6017.964,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 6107.7847,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 6646.7065,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 6826.347,
+      "id": 6,
+      "length": 0.0
+    },
+    {
+      "strumTime": 7005.988,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 6287.4253,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 7544.91,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 7724.551,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 7365.2695,
+      "id": 6,
+      "length": 0.0
+    },
+    {
+      "strumTime": 7455.09,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 7904.1914,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 8083.8325,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 8263.473,
+      "id": 6,
+      "length": 0.0
+    },
+    {
+      "strumTime": 8443.114,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 8802.3955,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 8892.216,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 8982.036,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 9520.958,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 9700.599,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 9880.239,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 9161.677,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 10419.162,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 10598.803,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 10239.5205,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 10329.342,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 10778.443,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 10958.084,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 11137.725,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 11317.365,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 11676.646,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 11766.467,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 11856.287,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 12035.928,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 12754.491,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 12395.21,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 12574.851,
+      "id": 6,
+      "length": 0.0
+    },
+    {
+      "strumTime": 13113.772,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 13203.593,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 13293.413,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 13473.054,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 13652.694,
+      "id": 6,
+      "length": 0.0
+    },
+    {
+      "strumTime": 13832.335,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 14011.976,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 14371.258,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 14550.898,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 14550.898,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 14640.719,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 14730.539,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 14910.18,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 15628.742,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 15269.461,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 15449.102,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 15988.024,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 16077.845,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 16167.665,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 16347.306,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 16526.945,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 16706.586,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 16886.229,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 17245.51,
+      "id": 6,
+      "length": 0.0
+    },
+    {
+      "strumTime": 17604.791,
+      "id": 6,
+      "length": 0.0
+    },
+    {
+      "strumTime": 17964.072,
+      "id": 6,
+      "length": 0.0
+    },
+    {
+      "strumTime": 18323.354,
+      "id": 6,
+      "length": 0.0
+    },
+    {
+      "strumTime": 17245.51,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 18323.354,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 18502.994,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 18682.635,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 18862.275,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 19041.916,
+      "id": 6,
+      "length": 0.0
+    },
+    {
+      "strumTime": 19401.197,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 19491.018,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 19760.479,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 18682.635,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 19401.197,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 19760.479,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 19850.299,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 19940.12,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 20119.76,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 20479.041,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 20838.324,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 21197.605,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 20119.76,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 21197.605,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 21377.246,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 21467.066,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 21556.887,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 21916.168,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 22005.988,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 22095.809,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 22634.73,
+      "id": 4,
+      "length": 224.5509
+    },
+    {
+      "strumTime": 21556.887,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 21916.168,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 22634.73,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 22095.809,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 22275.45,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 22455.09,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 22005.988,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 22365.27,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 22455.09,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 22275.45,
+      "id": 6,
+      "length": 0.0
+    },
+    {
+      "strumTime": 22365.27,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 22994.012,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 22994.012,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 23353.293,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 23712.574,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 24071.855,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 24071.855,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 24251.496,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 24431.139,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 24790.42,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 25149.701,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 25508.982,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 24880.24,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 24431.139,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 25149.701,
+      "id": 6,
+      "length": 0.0
+    },
+    {
+      "strumTime": 25508.982,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 25688.623,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 25239.521,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 25868.264,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 26227.545,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 26586.826,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 26946.107,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 25868.264,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 26946.107,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 27125.748,
+      "id": 6,
+      "length": 0.0
+    },
+    {
+      "strumTime": 27215.568,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 27305.389,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 27664.67,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 27754.49,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 27844.31,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 28023.951,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 27305.389,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 27664.67,
+      "id": 6,
+      "length": 0.0
+    },
+    {
+      "strumTime": 27844.31,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 28023.951,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 28203.594,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 28383.234,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 28383.234,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 28113.771,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 28203.594,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 28742.516,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 29281.438,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 29461.078,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 29820.36,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 30000.0,
+      "id": 6,
+      "length": 0.0
+    },
+    {
+      "strumTime": 29461.078,
+      "id": 6,
+      "length": 224.5509
+    },
+    {
+      "strumTime": 30179.64,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 30179.64,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 30898.203,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 31616.766,
+      "id": 6,
+      "length": 0.0
+    },
+    {
+      "strumTime": 31796.406,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 31886.229,
+      "id": 6,
+      "length": 0.0
+    },
+    {
+      "strumTime": 31976.049,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 32155.69,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 32335.33,
+      "id": 6,
+      "length": 224.5509
+    },
+    {
+      "strumTime": 32335.33,
+      "id": 7,
+      "length": 224.5509
+    },
+    {
+      "strumTime": 32694.611,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 32874.25,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 33053.89,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 33772.457,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 34131.74,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 34491.02,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 34491.02,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 35029.94,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 35568.863,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 35748.504,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 35209.582,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 35928.145,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 35928.145,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 36646.707,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 36826.348,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 37365.27,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 37544.91,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 37634.73,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 37724.55,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 37904.19,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 38083.832,
+      "id": 2,
+      "length": 224.5509
+    },
+    {
+      "strumTime": 38083.832,
+      "id": 3,
+      "length": 224.5509
+    },
+    {
+      "strumTime": 38443.113,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 38622.754,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 38802.395,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 39520.957,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 39880.24,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 40239.52,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 40958.082,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 40598.8,
+      "id": 6,
+      "length": 224.5509
+    },
+    {
+      "strumTime": 40598.8,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 40958.082,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 41317.367,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 40239.52,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 41137.723,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 41676.65,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 42395.21,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 41676.65,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 42035.93,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 42035.93,
+      "id": 6,
+      "length": 224.5509
+    },
+    {
+      "strumTime": 42754.492,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 42934.133,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 42395.21,
+      "id": 7,
+      "length": 224.5509
+    },
+    {
+      "strumTime": 43113.773,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 43832.336,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 43473.055,
+      "id": 6,
+      "length": 0.0
+    },
+    {
+      "strumTime": 43473.055,
+      "id": 7,
+      "length": 224.5509
+    },
+    {
+      "strumTime": 43113.773,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 43832.336,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 44191.617,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 44011.977,
+      "id": 6,
+      "length": 0.0
+    },
+    {
+      "strumTime": 44550.9,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 45269.46,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 45628.742,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 44550.9,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 44910.18,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 44910.18,
+      "id": 7,
+      "length": 224.5509
+    },
+    {
+      "strumTime": 45269.46,
+      "id": 4,
+      "length": 224.5509
+    },
+    {
+      "strumTime": 45808.383,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 45628.742,
+      "id": 6,
+      "length": 0.0
+    },
+    {
+      "strumTime": 46347.305,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 46706.586,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 47065.867,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 45988.023,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 46347.305,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 46886.227,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 46706.586,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 45988.023,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 47425.15,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 47784.43,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 48143.71,
+      "id": 3,
+      "length": 224.5509
+    },
+    {
+      "strumTime": 48502.992,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 48682.633,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 47784.43,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 48143.71,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 47425.15,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 48143.71,
+      "id": 2,
+      "length": 224.5509
+    },
+    {
+      "strumTime": 49221.56,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 48862.277,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 49580.84,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 49940.12,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 49760.48,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 49580.84,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 48862.277,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 49221.56,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 50299.402,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 50658.684,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 51017.965,
+      "id": 0,
+      "length": 224.5509
+    },
+    {
+      "strumTime": 51556.887,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 51377.246,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 50658.684,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 51377.246,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 51017.965,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 50299.402,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 51017.965,
+      "id": 3,
+      "length": 224.5509
+    },
+    {
+      "strumTime": 53353.293,
+      "id": 6,
+      "length": 0.0
+    },
+    {
+      "strumTime": 53443.113,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 53532.934,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 54071.855,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 54251.496,
+      "id": 6,
+      "length": 0.0
+    },
+    {
+      "strumTime": 54431.137,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 53712.574,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 53532.934,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 54251.496,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 54970.06,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 55149.7,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 54790.418,
+      "id": 6,
+      "length": 0.0
+    },
+    {
+      "strumTime": 54880.24,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 55329.34,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 55508.98,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 55688.62,
+      "id": 6,
+      "length": 0.0
+    },
+    {
+      "strumTime": 55868.26,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 54970.06,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 55688.62,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 56227.543,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 56317.367,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 56407.188,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 56946.11,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 57125.75,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 57305.39,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 56586.83,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 56407.188,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 57125.75,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 57844.312,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 58023.953,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 57664.67,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 57754.492,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 58203.594,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 58383.234,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 58562.875,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 58742.516,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 57844.312,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 58562.875,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 59101.797,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 59191.617,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 59281.438,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 59461.08,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 60179.64,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 59820.36,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 60000.0,
+      "id": 6,
+      "length": 0.0
+    },
+    {
+      "strumTime": 59281.438,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 59461.08,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 60000.0,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 60179.64,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 60538.92,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 60628.742,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 60718.562,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 60898.203,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 61077.844,
+      "id": 6,
+      "length": 0.0
+    },
+    {
+      "strumTime": 61257.484,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 61437.125,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 61616.766,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 61437.125,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 60898.203,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 60718.562,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 61796.406,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 61976.047,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 61976.047,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 62065.867,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 62155.688,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 62335.33,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 63053.89,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 62694.61,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 62874.25,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 62874.25,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 62514.97,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 62155.688,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 63413.17,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 63502.992,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 63592.812,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 63772.457,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 63952.098,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 64131.74,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 64311.38,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 64311.38,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 63952.098,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 63592.812,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 63233.53,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 64670.66,
+      "id": 6,
+      "length": 0.0
+    },
+    {
+      "strumTime": 65029.94,
+      "id": 6,
+      "length": 0.0
+    },
+    {
+      "strumTime": 65389.223,
+      "id": 6,
+      "length": 0.0
+    },
+    {
+      "strumTime": 65748.5,
+      "id": 6,
+      "length": 0.0
+    },
+    {
+      "strumTime": 64670.66,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 65748.5,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 65928.14,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 66107.78,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 66287.42,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 66467.06,
+      "id": 6,
+      "length": 0.0
+    },
+    {
+      "strumTime": 66826.34,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 66916.164,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 67185.625,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 66107.78,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 66826.34,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 67185.625,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 67365.266,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 67275.445,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 67544.914,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 67904.195,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 68263.48,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 68622.76,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 67544.914,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 68622.76,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 68802.4,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 68892.22,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 68982.04,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 69341.32,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 69431.14,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 69520.96,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 69700.6,
+      "id": 6,
+      "length": 0.0
+    },
+    {
+      "strumTime": 70059.88,
+      "id": 4,
+      "length": 224.5509
+    },
+    {
+      "strumTime": 68982.04,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 69341.32,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 70059.88,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 69700.6,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 69880.24,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 69520.96,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 69431.14,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 69790.42,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 69790.42,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 69880.24,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 70419.164,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 70419.164,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 70778.445,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 71137.73,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 71497.01,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 71497.01,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 71676.65,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 71856.29,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 72215.57,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 72574.85,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 72934.13,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 72305.39,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 71856.29,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 72574.85,
+      "id": 6,
+      "length": 0.0
+    },
+    {
+      "strumTime": 72934.13,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 73113.77,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 72664.67,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 73293.414,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 73652.695,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 74011.98,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 74371.26,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 73293.414,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 74371.26,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 74550.9,
+      "id": 6,
+      "length": 0.0
+    },
+    {
+      "strumTime": 74640.72,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 74730.54,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 75089.82,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 75179.64,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 75269.46,
+      "id": 0,
+      "length": 0.0
+    },
+    {
+      "strumTime": 75449.1,
+      "id": 2,
+      "length": 0.0
+    },
+    {
+      "strumTime": 74730.54,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 75089.82,
+      "id": 6,
+      "length": 0.0
+    },
+    {
+      "strumTime": 75269.46,
+      "id": 5,
+      "length": 0.0
+    },
+    {
+      "strumTime": 75449.1,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 75628.74,
+      "id": 4,
+      "length": 0.0
+    },
+    {
+      "strumTime": 75808.38,
+      "id": 7,
+      "length": 0.0
+    },
+    {
+      "strumTime": 75808.38,
+      "id": 1,
+      "length": 0.0
+    },
+    {
+      "strumTime": 75538.92,
+      "id": 3,
+      "length": 0.0
+    },
+    {
+      "strumTime": 75628.74,
+      "id": 0,
+      "length": 0.0
+    }
+  ]
+}

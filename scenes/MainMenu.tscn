@@ -1,0 +1,1934 @@
+[gd_scene load_steps=88 format=3 uid="uid://dmj5hhmuc7l3w"]
+
+[ext_resource type="AudioStream" uid="uid://b7bs83bgvqpsw" path="res://assets/sounds/open.ogg" id="1_1te0t"]
+[ext_resource type="Script" path="res://source/menu/MainMenuBehavior.cs" id="1_clp3y"]
+[ext_resource type="Texture2D" uid="uid://dp1ivdaatodt5" path="res://assets/images/menus/bg.png" id="1_fo6a7"]
+[ext_resource type="AudioStream" uid="uid://cr0u8ev0xj1it" path="res://assets/sounds/hum.ogg" id="1_vk6vf"]
+[ext_resource type="Texture2D" uid="uid://br6qj7bv5dq6u" path="res://assets/images/menus/banner.png" id="2_vhktx"]
+[ext_resource type="Texture2D" uid="uid://ujgbk1k57ii" path="res://assets/images/menus/playNow.png" id="3_8l1bu"]
+[ext_resource type="Texture2D" uid="uid://cl07m7iwmsl03" path="res://assets/images/menus/buttons/navBar.png" id="4_frbxl"]
+[ext_resource type="AudioStream" uid="uid://dmavj3k2nyr7f" path="res://assets/sounds/transitionIntoSong.ogg" id="4_nsvqe"]
+[ext_resource type="Script" path="res://source/menu/Button.cs" id="5_gbx0d"]
+[ext_resource type="Texture2D" uid="uid://bkcxi5gkpe50f" path="res://assets/images/menus/buttons/navBar_selected.png" id="5_wjogt"]
+[ext_resource type="VideoStream" path="res://assets/videos/flesh.ogv" id="7_7ei2v"]
+[ext_resource type="Texture2D" uid="uid://cqbcd47esero5" path="res://assets/images/menus/ad.png" id="8_1wth7"]
+[ext_resource type="Texture2D" uid="uid://cdi5dctsnkrn2" path="res://assets/images/menus/ad2.png" id="9_ovnaq"]
+[ext_resource type="Texture2D" uid="uid://wyrqmqbkgpfo" path="res://assets/images/menus/tab.png" id="9_tnj2t"]
+[ext_resource type="Texture2D" uid="uid://2cp3xe5irbdc" path="res://assets/images/menus/admin.png" id="10_7tvmi"]
+[ext_resource type="Script" path="res://source/menu/TextSpam.cs" id="12_cbo61"]
+[ext_resource type="Texture2D" uid="uid://k221unk1t4px" path="res://assets/images/menus/bullet.png" id="13_57k3a"]
+[ext_resource type="Texture2D" uid="uid://bup34wc66rsog" path="res://assets/images/menus/portraits/godswill.png" id="13_ud0m7"]
+[ext_resource type="Texture2D" uid="uid://cjf5e2puoi78b" path="res://assets/images/menus/portraits/Classic.png" id="14_u3tfh"]
+[ext_resource type="Shader" path="res://assets/shaders/Pc.gdshader" id="16_3snoe"]
+[ext_resource type="Script" path="res://source/menu/SongButton.cs" id="17_35ftg"]
+[ext_resource type="Texture2D" uid="uid://dlw46q0iyxpho" path="res://assets/images/menus/speech.png" id="18_kfo77"]
+[ext_resource type="Script" path="res://source/menu/options/Checkbox.cs" id="19_8xe4x"]
+[ext_resource type="Script" path="res://source/menu/options/Number.cs" id="20_pdpow"]
+[ext_resource type="SpriteFrames" uid="uid://dwvba1heudptf" path="res://assets/images/characters/bf/anims.tres" id="22_85lcw"]
+[ext_resource type="Script" path="res://source/menu/options/Controls.cs" id="22_tp0qf"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_c46dg"]
+font_size = 14
+font_color = Color(0.333333, 0.333333, 0.333333, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_axgxk"]
+font_size = 15
+outline_size = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mwn6w"]
+bg_color = Color(0.920995, 0.920995, 0.920994, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.699653, 0.699653, 0.699653, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_lmbrl"]
+font_size = 19
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wehmb"]
+bg_color = Color(0.920995, 0.920995, 0.920994, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.699653, 0.699653, 0.699653, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3xuhf"]
+atlas = ExtResource("9_tnj2t")
+region = Rect2(789, 1, 234, 33)
+
+[sub_resource type="LabelSettings" id="LabelSettings_irtg6"]
+font_size = 25
+outline_size = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7y3ky"]
+bg_color = Color(0.920995, 0.920995, 0.920994, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.699653, 0.699653, 0.699653, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_circ3"]
+bg_color = Color(0.920995, 0.920995, 0.920994, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.752941, 0.796078, 0.870588, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_w5g1w"]
+font_size = 18
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_chpiu"]
+bg_color = Color(0.920995, 0.920995, 0.920994, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.752941, 0.796078, 0.870588, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oouto"]
+bg_color = Color(0.920995, 0.920995, 0.920994, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.699653, 0.699653, 0.699653, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f2ges"]
+atlas = ExtResource("9_tnj2t")
+region = Rect2(830, 0, 193, 33)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ierk0"]
+font_size = 21
+outline_size = 1
+
+[sub_resource type="FontVariation" id="FontVariation_6b217"]
+spacing_glyph = 2
+
+[sub_resource type="LabelSettings" id="LabelSettings_g6qkh"]
+font_size = 15
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_338ey"]
+font_size = 15
+font_color = Color(3.08037e-06, 0, 0.832349, 1)
+outline_size = 1
+outline_color = Color(0, 0, 0.831373, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_nky5p"]
+font_size = 15
+font_color = Color(0, 0, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_uliqt"]
+font_size = 15
+font_color = Color(0, 0, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_f1y1g"]
+font_size = 15
+font_color = Color(0, 0, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_tkhux"]
+font_size = 15
+font_color = Color(0, 0, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_aj7de"]
+font_size = 15
+font_color = Color(0, 0, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_cdd6d"]
+font_size = 15
+font_color = Color(0, 0, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i1x1i"]
+bg_color = Color(0.920995, 0.920995, 0.920994, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.699653, 0.699653, 0.699653, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_tjo34"]
+font_size = 21
+outline_size = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wr56j"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_o478w"]
+font_size = 13
+font_color = Color(0, 0, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_0vd6n"]
+font_size = 9
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_gmrjy"]
+font_size = 9
+font_color = Color(0, 0, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_m6t73"]
+font_size = 9
+font_color = Color(1, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jc82x"]
+bg_color = Color(0.920995, 0.920995, 0.920994, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.699653, 0.699653, 0.699653, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_uqbl0"]
+font_size = 31
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0qvfx"]
+bg_color = Color(0.787758, 0.78776, 0.787757, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.699653, 0.699653, 0.699653, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_m3wuy"]
+font_size = 31
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_wuwc2"]
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_cwp3x"]
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_y1b56"]
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_lcgrh"]
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_3u8aq"]
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_tg72v"]
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_0gikd"]
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_qfoi4"]
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oif2u"]
+bg_color = Color(0.427451, 0.427451, 0.427451, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="LabelSettings" id="LabelSettings_80v5y"]
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_sa174"]
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mnbot"]
+bg_color = Color(0.427451, 0.427451, 0.427451, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="LabelSettings" id="LabelSettings_e3bi8"]
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_dbpit"]
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n82ea"]
+bg_color = Color(0.427451, 0.427451, 0.427451, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="LabelSettings" id="LabelSettings_p4hlm"]
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_4pfdq"]
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_13dqy"]
+bg_color = Color(0.427451, 0.427451, 0.427451, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="LabelSettings" id="LabelSettings_687sh"]
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4nmy3"]
+bg_color = Color(0.920995, 0.920995, 0.920994, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.699653, 0.699653, 0.699653, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_65ijt"]
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_piqqh"]
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_s656w"]
+font_color = Color(0, 0, 0, 1)
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0yrg1"]
+bg_color = Color(0.920995, 0.920995, 0.920994, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.699653, 0.699653, 0.699653, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_es7mw"]
+font_color = Color(0, 0, 0, 1)
+outline_size = 1
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_2r30a"]
+font_color = Color(0, 0, 0, 1)
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8q2dn"]
+shader = ExtResource("16_3snoe")
+shader_parameter/curvature = 1.0
+shader_parameter/smear = 0.5
+shader_parameter/scanline_count = 300.0
+shader_parameter/blur_samples = 10
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_clp3y")
+
+[node name="Open" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_1te0t")
+volume_db = -5.0
+autoplay = true
+
+[node name="Hum" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_vk6vf")
+autoplay = true
+
+[node name="TransitionIntoSong" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_nsvqe")
+volume_db = -7.0
+
+[node name="PageContainer" type="ScrollContainer" parent="."]
+offset_right = 1280.0
+offset_bottom = 720.0
+
+[node name="Page" type="Control" parent="PageContainer"]
+custom_minimum_size = Vector2(1280, 1128)
+layout_mode = 2
+
+[node name="ColorRect" type="ColorRect" parent="PageContainer/Page"]
+layout_mode = 2
+offset_right = 1280.0
+offset_bottom = 1128.0
+
+[node name="Bg" type="Sprite2D" parent="PageContainer/Page"]
+modulate = Color(1, 1, 1, 0.933333)
+position = Vector2(640, 564)
+texture = ExtResource("1_fo6a7")
+
+[node name="Banner" type="Sprite2D" parent="PageContainer/Page"]
+position = Vector2(640, 97.5)
+texture = ExtResource("2_vhktx")
+
+[node name="PlayNow" type="Sprite2D" parent="PageContainer/Page"]
+position = Vector2(991, 115)
+texture = ExtResource("3_8l1bu")
+
+[node name="NavBar" type="Sprite2D" parent="PageContainer/Page"]
+position = Vector2(640, 210)
+texture = ExtResource("4_frbxl")
+
+[node name="PageBg" type="ColorRect" parent="PageContainer/Page"]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 225.0
+offset_right = 1090.0
+offset_bottom = 1128.0
+color = Color(0.94902, 0.94902, 0.94902, 1)
+
+[node name="Bottom" type="ColorRect" parent="PageContainer/Page"]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 940.0
+offset_right = 1090.0
+offset_bottom = 1128.0
+color = Color(0.901961, 0.901961, 0.901961, 1)
+
+[node name="Disclaimer" type="Label" parent="PageContainer/Page"]
+layout_mode = 0
+offset_left = 291.0
+offset_top = 1001.0
+offset_right = 989.0
+offset_bottom = 1067.0
+text = "God's will is wicked, and God's plan is cruel. I prayed again, and again, and again, but I was never heard.
+I seethe as I asked and begged for answers, but I was ignored everytime.
+Will I forever be abandoned in this digital purgatory? Why am I here? Why did I deserve this?
+"
+label_settings = SubResource("LabelSettings_c46dg")
+horizontal_alignment = 1
+
+[node name="NavBarContainer" type="HBoxContainer" parent="PageContainer/Page"]
+layout_mode = 0
+offset_left = 206.0
+offset_top = 195.0
+offset_right = 1090.0
+offset_bottom = 225.0
+
+[node name="My ROBLOX" type="Control" parent="PageContainer/Page/NavBarContainer"]
+custom_minimum_size = Vector2(100, 30)
+layout_mode = 2
+script = ExtResource("5_gbx0d")
+
+[node name="TextureRect" type="TextureRect" parent="PageContainer/Page/NavBarContainer/My ROBLOX"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 87.0
+offset_bottom = 30.0
+mouse_default_cursor_shape = 2
+texture = ExtResource("5_wjogt")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="PageContainer/Page/NavBarContainer/My ROBLOX"]
+layout_mode = 0
+offset_top = 3.0
+offset_right = 50.0
+offset_bottom = 25.0
+text = "My ROBLOX"
+label_settings = SubResource("LabelSettings_axgxk")
+
+[node name="Games" type="Control" parent="PageContainer/Page/NavBarContainer"]
+custom_minimum_size = Vector2(63, 30)
+layout_mode = 2
+script = ExtResource("5_gbx0d")
+
+[node name="TextureRect" type="TextureRect" parent="PageContainer/Page/NavBarContainer/Games"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 50.0
+offset_bottom = 30.0
+mouse_default_cursor_shape = 2
+texture = ExtResource("5_wjogt")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="PageContainer/Page/NavBarContainer/Games"]
+layout_mode = 0
+offset_top = 3.0
+offset_right = 50.0
+offset_bottom = 25.0
+text = "Games"
+label_settings = SubResource("LabelSettings_axgxk")
+
+[node name="My Character" type="Control" parent="PageContainer/Page/NavBarContainer"]
+custom_minimum_size = Vector2(112, 30)
+layout_mode = 2
+script = ExtResource("5_gbx0d")
+
+[node name="TextureRect" type="TextureRect" parent="PageContainer/Page/NavBarContainer/My Character"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 98.0
+offset_bottom = 30.0
+mouse_default_cursor_shape = 2
+texture = ExtResource("5_wjogt")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="PageContainer/Page/NavBarContainer/My Character"]
+layout_mode = 0
+offset_top = 3.0
+offset_right = 98.0
+offset_bottom = 25.0
+text = "My Character"
+label_settings = SubResource("LabelSettings_axgxk")
+
+[node name="Blog" type="Control" parent="PageContainer/Page/NavBarContainer"]
+custom_minimum_size = Vector2(45, 30)
+layout_mode = 2
+script = ExtResource("5_gbx0d")
+
+[node name="TextureRect" type="TextureRect" parent="PageContainer/Page/NavBarContainer/Blog"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 32.0
+offset_bottom = 30.0
+mouse_default_cursor_shape = 2
+texture = ExtResource("5_wjogt")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="PageContainer/Page/NavBarContainer/Blog"]
+layout_mode = 0
+offset_top = 3.0
+offset_right = 32.0
+offset_bottom = 25.0
+text = "Blog"
+label_settings = SubResource("LabelSettings_axgxk")
+
+[node name="Help" type="Control" parent="PageContainer/Page/NavBarContainer"]
+custom_minimum_size = Vector2(45, 30)
+layout_mode = 2
+script = ExtResource("5_gbx0d")
+
+[node name="TextureRect" type="TextureRect" parent="PageContainer/Page/NavBarContainer/Help"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 34.0
+offset_bottom = 30.0
+mouse_default_cursor_shape = 2
+texture = ExtResource("5_wjogt")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="PageContainer/Page/NavBarContainer/Help"]
+layout_mode = 0
+offset_top = 3.0
+offset_right = 32.0
+offset_bottom = 25.0
+text = "Help"
+label_settings = SubResource("LabelSettings_axgxk")
+
+[node name="Tabs" type="Control" parent="PageContainer/Page"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="My ROBLOX" type="Control" parent="PageContainer/Page/Tabs"]
+anchors_preset = 0
+offset_left = 190.0
+offset_top = 225.0
+offset_right = 1090.0
+offset_bottom = 1128.0
+
+[node name="Panel" type="Panel" parent="PageContainer/Page/Tabs/My ROBLOX"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 15.0
+offset_right = 560.0
+offset_bottom = 336.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_mwn6w")
+
+[node name="Label" type="Label" parent="PageContainer/Page/Tabs/My ROBLOX/Panel"]
+layout_mode = 0
+offset_left = 44.0
+offset_top = 27.0
+offset_right = 133.0
+offset_bottom = 54.0
+text = "Logged In"
+label_settings = SubResource("LabelSettings_lmbrl")
+
+[node name="Player" type="VideoStreamPlayer" parent="PageContainer/Page/Tabs/My ROBLOX/Panel"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 70.0
+offset_right = 161.0
+offset_bottom = 259.0
+stream = ExtResource("7_7ei2v")
+autoplay = true
+expand = true
+loop = true
+
+[node name="Video" type="VideoStreamPlayer" parent="PageContainer/Page/Tabs/My ROBLOX/Panel"]
+layout_mode = 0
+offset_left = 185.0
+offset_top = 27.0
+offset_right = 537.0
+offset_bottom = 293.0
+stream = ExtResource("7_7ei2v")
+autoplay = true
+expand = true
+loop = true
+
+[node name="Ad" type="TextureRect" parent="PageContainer/Page/Tabs/My ROBLOX"]
+layout_mode = 0
+offset_left = 599.0
+offset_top = 14.0
+offset_right = 875.0
+offset_bottom = 335.0
+texture = ExtResource("8_1wth7")
+
+[node name="TabPanel" type="Panel" parent="PageContainer/Page/Tabs/My ROBLOX"]
+layout_mode = 0
+offset_left = 598.0
+offset_top = 400.0
+offset_right = 874.0
+offset_bottom = 699.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_wehmb")
+
+[node name="Tab" type="TextureRect" parent="PageContainer/Page/Tabs/My ROBLOX/TabPanel"]
+layout_mode = 2
+offset_top = -39.0
+offset_right = 276.0
+texture = SubResource("AtlasTexture_3xuhf")
+expand_mode = 5
+stretch_mode = 6
+
+[node name="Label" type="Label" parent="PageContainer/Page/Tabs/My ROBLOX/TabPanel/Tab"]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 2.0
+offset_right = 160.0
+offset_bottom = 37.0
+text = "Roblox Stats"
+label_settings = SubResource("LabelSettings_irtg6")
+
+[node name="TextureRect" type="TextureRect" parent="PageContainer/Page/Tabs/My ROBLOX/TabPanel/Tab"]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 65.0
+offset_right = 57.0
+offset_bottom = 105.0
+texture = ExtResource("10_7tvmi")
+
+[node name="TextureRect2" type="TextureRect" parent="PageContainer/Page/Tabs/My ROBLOX/TabPanel/Tab"]
+layout_mode = 0
+offset_left = 127.0
+offset_top = 90.0
+offset_right = 167.0
+offset_bottom = 130.0
+texture = ExtResource("10_7tvmi")
+
+[node name="TextureRect3" type="TextureRect" parent="PageContainer/Page/Tabs/My ROBLOX/TabPanel/Tab"]
+layout_mode = 0
+offset_left = 81.0
+offset_top = 201.0
+offset_right = 121.0
+offset_bottom = 241.0
+texture = ExtResource("10_7tvmi")
+
+[node name="TextureRect4" type="TextureRect" parent="PageContainer/Page/Tabs/My ROBLOX/TabPanel/Tab"]
+layout_mode = 0
+offset_left = 219.0
+offset_top = 52.0
+offset_right = 259.0
+offset_bottom = 92.0
+texture = ExtResource("10_7tvmi")
+
+[node name="TextureRect5" type="TextureRect" parent="PageContainer/Page/Tabs/My ROBLOX/TabPanel/Tab"]
+layout_mode = 0
+offset_left = 217.0
+offset_top = 275.0
+offset_right = 257.0
+offset_bottom = 315.0
+texture = ExtResource("10_7tvmi")
+
+[node name="TextureRect6" type="TextureRect" parent="PageContainer/Page/Tabs/My ROBLOX/TabPanel/Tab"]
+layout_mode = 0
+offset_left = 207.0
+offset_top = 157.0
+offset_right = 247.0
+offset_bottom = 197.0
+texture = ExtResource("10_7tvmi")
+
+[node name="TextureRect7" type="TextureRect" parent="PageContainer/Page/Tabs/My ROBLOX/TabPanel/Tab"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 278.0
+offset_right = 88.0
+offset_bottom = 318.0
+texture = ExtResource("10_7tvmi")
+
+[node name="TextureRect8" type="TextureRect" parent="PageContainer/Page/Tabs/My ROBLOX/TabPanel/Tab"]
+layout_mode = 0
+offset_left = 143.0
+offset_top = 206.0
+offset_right = 183.0
+offset_bottom = 246.0
+texture = ExtResource("10_7tvmi")
+
+[node name="Panel2" type="Panel" parent="PageContainer/Page/Tabs/My ROBLOX"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 361.0
+offset_right = 560.0
+offset_bottom = 699.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_7y3ky")
+
+[node name="Ad2" type="TextureRect" parent="PageContainer/Page/Tabs/My ROBLOX/Panel2"]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 12.0
+offset_right = 536.0
+offset_bottom = 119.0
+texture = ExtResource("9_ovnaq")
+
+[node name="FeaturedPanel" type="Panel" parent="PageContainer/Page/Tabs/My ROBLOX/Panel2"]
+layout_mode = 0
+offset_left = 178.0
+offset_top = 124.0
+offset_right = 401.0
+offset_bottom = 160.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_circ3")
+
+[node name="Label" type="Label" parent="PageContainer/Page/Tabs/My ROBLOX/Panel2/FeaturedPanel"]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 4.0
+offset_right = 204.0
+offset_bottom = 30.0
+text = "Featured Free Game:"
+label_settings = SubResource("LabelSettings_w5g1w")
+
+[node name="GamePanel" type="Panel" parent="PageContainer/Page/Tabs/My ROBLOX/Panel2/FeaturedPanel"]
+layout_mode = 0
+offset_left = -160.0
+offset_top = 40.0
+offset_right = 359.0
+offset_bottom = 209.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_chpiu")
+
+[node name="Player" type="VideoStreamPlayer" parent="PageContainer/Page/Tabs/My ROBLOX/Panel2/FeaturedPanel/GamePanel"]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 6.0
+offset_right = 510.0
+offset_bottom = 163.0
+stream = ExtResource("7_7ei2v")
+autoplay = true
+expand = true
+loop = true
+
+[node name="Games" type="Control" parent="PageContainer/Page/Tabs"]
+visible = false
+anchors_preset = 0
+offset_left = 190.0
+offset_top = 225.0
+offset_right = 1090.0
+offset_bottom = 1128.0
+
+[node name="TabPanel" type="Panel" parent="PageContainer/Page/Tabs/Games"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 52.0
+offset_right = 146.0
+offset_bottom = 237.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_oouto")
+
+[node name="Tab" type="TextureRect" parent="PageContainer/Page/Tabs/Games/TabPanel"]
+layout_mode = 0
+offset_top = -32.0
+offset_right = 128.0
+texture = SubResource("AtlasTexture_f2ges")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="PageContainer/Page/Tabs/Games/TabPanel/Tab"]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 1.0
+offset_right = 78.0
+offset_bottom = 31.0
+text = "Games"
+label_settings = SubResource("LabelSettings_ierk0")
+
+[node name="BrowseLabel" type="Label" parent="PageContainer/Page/Tabs/Games/TabPanel"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 9.0
+offset_right = 66.0
+offset_bottom = 32.0
+theme_override_fonts/font = SubResource("FontVariation_6b217")
+text = "Browse"
+label_settings = SubResource("LabelSettings_g6qkh")
+
+[node name="Bullet" type="TextureRect" parent="PageContainer/Page/Tabs/Games/TabPanel"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 43.0
+offset_right = 23.0
+offset_bottom = 59.0
+texture = ExtResource("13_57k3a")
+
+[node name="TextSpam" type="Label" parent="PageContainer/Page/Tabs/Games/TabPanel"]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 40.0
+offset_right = 71.0
+offset_bottom = 62.0
+text = "123456789012"
+label_settings = SubResource("LabelSettings_338ey")
+script = ExtResource("12_cbo61")
+
+[node name="TextSpam2" type="Label" parent="PageContainer/Page/Tabs/Games/TabPanel"]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 60.0
+offset_right = 112.0
+offset_bottom = 82.0
+text = "123456789012"
+label_settings = SubResource("LabelSettings_nky5p")
+script = ExtResource("12_cbo61")
+
+[node name="TextSpam3" type="Label" parent="PageContainer/Page/Tabs/Games/TabPanel"]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 80.0
+offset_right = 112.0
+offset_bottom = 102.0
+text = "123456789012"
+label_settings = SubResource("LabelSettings_uliqt")
+script = ExtResource("12_cbo61")
+
+[node name="TextSpam4" type="Label" parent="PageContainer/Page/Tabs/Games/TabPanel"]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 100.0
+offset_right = 112.0
+offset_bottom = 122.0
+text = "123456789012"
+label_settings = SubResource("LabelSettings_f1y1g")
+script = ExtResource("12_cbo61")
+
+[node name="TextSpam5" type="Label" parent="PageContainer/Page/Tabs/Games/TabPanel"]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 120.0
+offset_right = 112.0
+offset_bottom = 142.0
+text = "123456789012"
+label_settings = SubResource("LabelSettings_tkhux")
+script = ExtResource("12_cbo61")
+
+[node name="TextSpam6" type="Label" parent="PageContainer/Page/Tabs/Games/TabPanel"]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 140.0
+offset_right = 112.0
+offset_bottom = 162.0
+text = "123456789012"
+label_settings = SubResource("LabelSettings_aj7de")
+script = ExtResource("12_cbo61")
+
+[node name="TextSpam7" type="Label" parent="PageContainer/Page/Tabs/Games/TabPanel"]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 160.0
+offset_right = 112.0
+offset_bottom = 182.0
+text = "123456789012"
+label_settings = SubResource("LabelSettings_cdd6d")
+script = ExtResource("12_cbo61")
+
+[node name="TabPanel2" type="Panel" parent="PageContainer/Page/Tabs/Games"]
+layout_mode = 0
+offset_left = 150.0
+offset_top = 53.0
+offset_right = 895.0
+offset_bottom = 65.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_i1x1i")
+
+[node name="Tab" type="TextureRect" parent="PageContainer/Page/Tabs/Games/TabPanel2"]
+layout_mode = 0
+offset_top = -32.0
+offset_right = 193.0
+texture = SubResource("AtlasTexture_f2ges")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="PageContainer/Page/Tabs/Games/TabPanel2/Tab"]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 1.0
+offset_right = 78.0
+offset_bottom = 31.0
+text = "Games"
+label_settings = SubResource("LabelSettings_tjo34")
+script = ExtResource("12_cbo61")
+
+[node name="GridContainer" type="GridContainer" parent="PageContainer/Page/Tabs/Games"]
+layout_mode = 0
+offset_left = 166.0
+offset_top = 117.0
+offset_right = 911.0
+offset_bottom = 660.0
+columns = 4
+
+[node name="Purgatory" type="Control" parent="PageContainer/Page/Tabs/Games/GridContainer"]
+custom_minimum_size = Vector2(168, 153)
+layout_mode = 2
+script = ExtResource("17_35ftg")
+
+[node name="TabPanel" type="Panel" parent="PageContainer/Page/Tabs/Games/GridContainer/Purgatory"]
+layout_mode = 0
+offset_left = -2.0
+offset_top = -2.0
+offset_right = 158.0
+offset_bottom = 111.0
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_wr56j")
+
+[node name="TextureRect" type="TextureRect" parent="PageContainer/Page/Tabs/Games/GridContainer/Purgatory/TabPanel"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 158.0
+offset_bottom = 111.0
+mouse_filter = 2
+texture = ExtResource("13_ud0m7")
+
+[node name="Icon" type="TextureRect" parent="PageContainer/Page/Tabs/Games/GridContainer/Purgatory"]
+layout_mode = 0
+offset_top = 113.0
+offset_right = 16.0
+offset_bottom = 129.0
+texture = ExtResource("14_u3tfh")
+
+[node name="Title" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/Purgatory"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 107.0
+offset_right = 82.0
+offset_bottom = 125.0
+text = "Purgatory"
+label_settings = SubResource("LabelSettings_o478w")
+script = ExtResource("12_cbo61")
+
+[node name="CreatorLabel" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/Purgatory"]
+layout_mode = 0
+offset_top = 130.0
+offset_right = 36.0
+offset_bottom = 143.0
+text = "Creator:"
+label_settings = SubResource("LabelSettings_0vd6n")
+
+[node name="Creator" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/Purgatory"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 130.0
+offset_right = 64.0
+offset_bottom = 143.0
+text = "JOHN"
+label_settings = SubResource("LabelSettings_gmrjy")
+
+[node name="PlayerCount" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/Purgatory"]
+layout_mode = 0
+offset_top = 142.0
+offset_right = 65.0
+offset_bottom = 155.0
+text = "1 player online"
+label_settings = SubResource("LabelSettings_m6t73")
+
+[node name="None" type="Control" parent="PageContainer/Page/Tabs/Games/GridContainer"]
+custom_minimum_size = Vector2(168, 153)
+layout_mode = 2
+
+[node name="TabPanel" type="Panel" parent="PageContainer/Page/Tabs/Games/GridContainer/None"]
+layout_mode = 0
+offset_left = -2.0
+offset_top = -2.0
+offset_right = 158.0
+offset_bottom = 111.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_wr56j")
+
+[node name="Icon" type="TextureRect" parent="PageContainer/Page/Tabs/Games/GridContainer/None"]
+layout_mode = 0
+offset_top = 113.0
+offset_right = 16.0
+offset_bottom = 129.0
+texture = ExtResource("14_u3tfh")
+
+[node name="Title" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 107.0
+offset_right = 37.0
+offset_bottom = 125.0
+text = "???"
+label_settings = SubResource("LabelSettings_o478w")
+
+[node name="CreatorLabel" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None"]
+layout_mode = 0
+offset_top = 130.0
+offset_right = 36.0
+offset_bottom = 143.0
+text = "Creator:"
+label_settings = SubResource("LabelSettings_0vd6n")
+
+[node name="Creator" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 130.0
+offset_right = 53.0
+offset_bottom = 143.0
+text = "???"
+label_settings = SubResource("LabelSettings_gmrjy")
+
+[node name="PlayerCount" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None"]
+layout_mode = 0
+offset_top = 142.0
+offset_right = 65.0
+offset_bottom = 155.0
+text = "0 player online"
+label_settings = SubResource("LabelSettings_m6t73")
+
+[node name="None2" type="Control" parent="PageContainer/Page/Tabs/Games/GridContainer"]
+custom_minimum_size = Vector2(168, 153)
+layout_mode = 2
+
+[node name="TabPanel" type="Panel" parent="PageContainer/Page/Tabs/Games/GridContainer/None2"]
+layout_mode = 0
+offset_left = -2.0
+offset_top = -2.0
+offset_right = 158.0
+offset_bottom = 111.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_wr56j")
+
+[node name="Icon" type="TextureRect" parent="PageContainer/Page/Tabs/Games/GridContainer/None2"]
+layout_mode = 0
+offset_top = 113.0
+offset_right = 16.0
+offset_bottom = 129.0
+texture = ExtResource("14_u3tfh")
+
+[node name="Title" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None2"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 107.0
+offset_right = 37.0
+offset_bottom = 125.0
+text = "???"
+label_settings = SubResource("LabelSettings_o478w")
+
+[node name="CreatorLabel" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None2"]
+layout_mode = 0
+offset_top = 130.0
+offset_right = 36.0
+offset_bottom = 143.0
+text = "Creator:"
+label_settings = SubResource("LabelSettings_0vd6n")
+
+[node name="Creator" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None2"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 130.0
+offset_right = 53.0
+offset_bottom = 143.0
+text = "???"
+label_settings = SubResource("LabelSettings_gmrjy")
+
+[node name="PlayerCount" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None2"]
+layout_mode = 0
+offset_top = 142.0
+offset_right = 65.0
+offset_bottom = 155.0
+text = "0 player online"
+label_settings = SubResource("LabelSettings_m6t73")
+
+[node name="None3" type="Control" parent="PageContainer/Page/Tabs/Games/GridContainer"]
+custom_minimum_size = Vector2(168, 153)
+layout_mode = 2
+
+[node name="TabPanel" type="Panel" parent="PageContainer/Page/Tabs/Games/GridContainer/None3"]
+layout_mode = 0
+offset_left = -2.0
+offset_top = -2.0
+offset_right = 158.0
+offset_bottom = 111.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_wr56j")
+
+[node name="Icon" type="TextureRect" parent="PageContainer/Page/Tabs/Games/GridContainer/None3"]
+layout_mode = 0
+offset_top = 113.0
+offset_right = 16.0
+offset_bottom = 129.0
+texture = ExtResource("14_u3tfh")
+
+[node name="Title" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None3"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 107.0
+offset_right = 37.0
+offset_bottom = 125.0
+text = "???"
+label_settings = SubResource("LabelSettings_o478w")
+
+[node name="CreatorLabel" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None3"]
+layout_mode = 0
+offset_top = 130.0
+offset_right = 36.0
+offset_bottom = 143.0
+text = "Creator:"
+label_settings = SubResource("LabelSettings_0vd6n")
+
+[node name="Creator" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None3"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 130.0
+offset_right = 53.0
+offset_bottom = 143.0
+text = "???"
+label_settings = SubResource("LabelSettings_gmrjy")
+
+[node name="PlayerCount" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None3"]
+layout_mode = 0
+offset_top = 142.0
+offset_right = 65.0
+offset_bottom = 155.0
+text = "0 player online"
+label_settings = SubResource("LabelSettings_m6t73")
+
+[node name="None4" type="Control" parent="PageContainer/Page/Tabs/Games/GridContainer"]
+custom_minimum_size = Vector2(168, 153)
+layout_mode = 2
+
+[node name="TabPanel" type="Panel" parent="PageContainer/Page/Tabs/Games/GridContainer/None4"]
+layout_mode = 0
+offset_left = -2.0
+offset_top = -2.0
+offset_right = 158.0
+offset_bottom = 111.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_wr56j")
+
+[node name="Icon" type="TextureRect" parent="PageContainer/Page/Tabs/Games/GridContainer/None4"]
+layout_mode = 0
+offset_top = 113.0
+offset_right = 16.0
+offset_bottom = 129.0
+texture = ExtResource("14_u3tfh")
+
+[node name="Title" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None4"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 107.0
+offset_right = 37.0
+offset_bottom = 125.0
+text = "???"
+label_settings = SubResource("LabelSettings_o478w")
+
+[node name="CreatorLabel" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None4"]
+layout_mode = 0
+offset_top = 130.0
+offset_right = 36.0
+offset_bottom = 143.0
+text = "Creator:"
+label_settings = SubResource("LabelSettings_0vd6n")
+
+[node name="Creator" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None4"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 130.0
+offset_right = 53.0
+offset_bottom = 143.0
+text = "???"
+label_settings = SubResource("LabelSettings_gmrjy")
+
+[node name="PlayerCount" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None4"]
+layout_mode = 0
+offset_top = 142.0
+offset_right = 65.0
+offset_bottom = 155.0
+text = "0 player online"
+label_settings = SubResource("LabelSettings_m6t73")
+
+[node name="None5" type="Control" parent="PageContainer/Page/Tabs/Games/GridContainer"]
+custom_minimum_size = Vector2(168, 153)
+layout_mode = 2
+
+[node name="TabPanel" type="Panel" parent="PageContainer/Page/Tabs/Games/GridContainer/None5"]
+layout_mode = 0
+offset_left = -2.0
+offset_top = -2.0
+offset_right = 158.0
+offset_bottom = 111.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_wr56j")
+
+[node name="Icon" type="TextureRect" parent="PageContainer/Page/Tabs/Games/GridContainer/None5"]
+layout_mode = 0
+offset_top = 113.0
+offset_right = 16.0
+offset_bottom = 129.0
+texture = ExtResource("14_u3tfh")
+
+[node name="Title" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None5"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 107.0
+offset_right = 37.0
+offset_bottom = 125.0
+text = "???"
+label_settings = SubResource("LabelSettings_o478w")
+
+[node name="CreatorLabel" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None5"]
+layout_mode = 0
+offset_top = 130.0
+offset_right = 36.0
+offset_bottom = 143.0
+text = "Creator:"
+label_settings = SubResource("LabelSettings_0vd6n")
+
+[node name="Creator" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None5"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 130.0
+offset_right = 53.0
+offset_bottom = 143.0
+text = "???"
+label_settings = SubResource("LabelSettings_gmrjy")
+
+[node name="PlayerCount" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None5"]
+layout_mode = 0
+offset_top = 142.0
+offset_right = 65.0
+offset_bottom = 155.0
+text = "0 player online"
+label_settings = SubResource("LabelSettings_m6t73")
+
+[node name="None6" type="Control" parent="PageContainer/Page/Tabs/Games/GridContainer"]
+custom_minimum_size = Vector2(168, 153)
+layout_mode = 2
+
+[node name="TabPanel" type="Panel" parent="PageContainer/Page/Tabs/Games/GridContainer/None6"]
+layout_mode = 0
+offset_left = -2.0
+offset_top = -2.0
+offset_right = 158.0
+offset_bottom = 111.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_wr56j")
+
+[node name="Icon" type="TextureRect" parent="PageContainer/Page/Tabs/Games/GridContainer/None6"]
+layout_mode = 0
+offset_top = 113.0
+offset_right = 16.0
+offset_bottom = 129.0
+texture = ExtResource("14_u3tfh")
+
+[node name="Title" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None6"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 107.0
+offset_right = 37.0
+offset_bottom = 125.0
+text = "???"
+label_settings = SubResource("LabelSettings_o478w")
+
+[node name="CreatorLabel" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None6"]
+layout_mode = 0
+offset_top = 130.0
+offset_right = 36.0
+offset_bottom = 143.0
+text = "Creator:"
+label_settings = SubResource("LabelSettings_0vd6n")
+
+[node name="Creator" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None6"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 130.0
+offset_right = 53.0
+offset_bottom = 143.0
+text = "???"
+label_settings = SubResource("LabelSettings_gmrjy")
+
+[node name="PlayerCount" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None6"]
+layout_mode = 0
+offset_top = 142.0
+offset_right = 65.0
+offset_bottom = 155.0
+text = "0 player online"
+label_settings = SubResource("LabelSettings_m6t73")
+
+[node name="None7" type="Control" parent="PageContainer/Page/Tabs/Games/GridContainer"]
+custom_minimum_size = Vector2(168, 153)
+layout_mode = 2
+
+[node name="TabPanel" type="Panel" parent="PageContainer/Page/Tabs/Games/GridContainer/None7"]
+layout_mode = 0
+offset_left = -2.0
+offset_top = -2.0
+offset_right = 158.0
+offset_bottom = 111.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_wr56j")
+
+[node name="Icon" type="TextureRect" parent="PageContainer/Page/Tabs/Games/GridContainer/None7"]
+layout_mode = 0
+offset_top = 113.0
+offset_right = 16.0
+offset_bottom = 129.0
+texture = ExtResource("14_u3tfh")
+
+[node name="Title" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None7"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 107.0
+offset_right = 37.0
+offset_bottom = 125.0
+text = "???"
+label_settings = SubResource("LabelSettings_o478w")
+
+[node name="CreatorLabel" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None7"]
+layout_mode = 0
+offset_top = 130.0
+offset_right = 36.0
+offset_bottom = 143.0
+text = "Creator:"
+label_settings = SubResource("LabelSettings_0vd6n")
+
+[node name="Creator" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None7"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 130.0
+offset_right = 53.0
+offset_bottom = 143.0
+text = "???"
+label_settings = SubResource("LabelSettings_gmrjy")
+
+[node name="PlayerCount" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None7"]
+layout_mode = 0
+offset_top = 142.0
+offset_right = 65.0
+offset_bottom = 155.0
+text = "0 player online"
+label_settings = SubResource("LabelSettings_m6t73")
+
+[node name="None8" type="Control" parent="PageContainer/Page/Tabs/Games/GridContainer"]
+custom_minimum_size = Vector2(168, 153)
+layout_mode = 2
+
+[node name="TabPanel" type="Panel" parent="PageContainer/Page/Tabs/Games/GridContainer/None8"]
+layout_mode = 0
+offset_left = -2.0
+offset_top = -2.0
+offset_right = 158.0
+offset_bottom = 111.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_wr56j")
+
+[node name="Icon" type="TextureRect" parent="PageContainer/Page/Tabs/Games/GridContainer/None8"]
+layout_mode = 0
+offset_top = 113.0
+offset_right = 16.0
+offset_bottom = 129.0
+texture = ExtResource("14_u3tfh")
+
+[node name="Title" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None8"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 107.0
+offset_right = 37.0
+offset_bottom = 125.0
+text = "???"
+label_settings = SubResource("LabelSettings_o478w")
+
+[node name="CreatorLabel" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None8"]
+layout_mode = 0
+offset_top = 130.0
+offset_right = 36.0
+offset_bottom = 143.0
+text = "Creator:"
+label_settings = SubResource("LabelSettings_0vd6n")
+
+[node name="Creator" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None8"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 130.0
+offset_right = 53.0
+offset_bottom = 143.0
+text = "???"
+label_settings = SubResource("LabelSettings_gmrjy")
+
+[node name="PlayerCount" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None8"]
+layout_mode = 0
+offset_top = 142.0
+offset_right = 65.0
+offset_bottom = 155.0
+text = "0 player online"
+label_settings = SubResource("LabelSettings_m6t73")
+
+[node name="None9" type="Control" parent="PageContainer/Page/Tabs/Games/GridContainer"]
+custom_minimum_size = Vector2(168, 153)
+layout_mode = 2
+
+[node name="TabPanel" type="Panel" parent="PageContainer/Page/Tabs/Games/GridContainer/None9"]
+layout_mode = 0
+offset_left = -2.0
+offset_top = -2.0
+offset_right = 158.0
+offset_bottom = 111.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_wr56j")
+
+[node name="Icon" type="TextureRect" parent="PageContainer/Page/Tabs/Games/GridContainer/None9"]
+layout_mode = 0
+offset_top = 113.0
+offset_right = 16.0
+offset_bottom = 129.0
+texture = ExtResource("14_u3tfh")
+
+[node name="Title" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None9"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 107.0
+offset_right = 37.0
+offset_bottom = 125.0
+text = "???"
+label_settings = SubResource("LabelSettings_o478w")
+
+[node name="CreatorLabel" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None9"]
+layout_mode = 0
+offset_top = 130.0
+offset_right = 36.0
+offset_bottom = 143.0
+text = "Creator:"
+label_settings = SubResource("LabelSettings_0vd6n")
+
+[node name="Creator" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None9"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 130.0
+offset_right = 53.0
+offset_bottom = 143.0
+text = "???"
+label_settings = SubResource("LabelSettings_gmrjy")
+
+[node name="PlayerCount" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None9"]
+layout_mode = 0
+offset_top = 142.0
+offset_right = 65.0
+offset_bottom = 155.0
+text = "0 player online"
+label_settings = SubResource("LabelSettings_m6t73")
+
+[node name="None10" type="Control" parent="PageContainer/Page/Tabs/Games/GridContainer"]
+custom_minimum_size = Vector2(168, 153)
+layout_mode = 2
+
+[node name="TabPanel" type="Panel" parent="PageContainer/Page/Tabs/Games/GridContainer/None10"]
+layout_mode = 0
+offset_left = -2.0
+offset_top = -2.0
+offset_right = 158.0
+offset_bottom = 111.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_wr56j")
+
+[node name="Icon" type="TextureRect" parent="PageContainer/Page/Tabs/Games/GridContainer/None10"]
+layout_mode = 0
+offset_top = 113.0
+offset_right = 16.0
+offset_bottom = 129.0
+texture = ExtResource("14_u3tfh")
+
+[node name="Title" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None10"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 107.0
+offset_right = 37.0
+offset_bottom = 125.0
+text = "???"
+label_settings = SubResource("LabelSettings_o478w")
+
+[node name="CreatorLabel" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None10"]
+layout_mode = 0
+offset_top = 130.0
+offset_right = 36.0
+offset_bottom = 143.0
+text = "Creator:"
+label_settings = SubResource("LabelSettings_0vd6n")
+
+[node name="Creator" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None10"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 130.0
+offset_right = 53.0
+offset_bottom = 143.0
+text = "???"
+label_settings = SubResource("LabelSettings_gmrjy")
+
+[node name="PlayerCount" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None10"]
+layout_mode = 0
+offset_top = 142.0
+offset_right = 65.0
+offset_bottom = 155.0
+text = "0 player online"
+label_settings = SubResource("LabelSettings_m6t73")
+
+[node name="None11" type="Control" parent="PageContainer/Page/Tabs/Games/GridContainer"]
+custom_minimum_size = Vector2(168, 153)
+layout_mode = 2
+
+[node name="TabPanel" type="Panel" parent="PageContainer/Page/Tabs/Games/GridContainer/None11"]
+layout_mode = 0
+offset_left = -2.0
+offset_top = -2.0
+offset_right = 158.0
+offset_bottom = 111.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_wr56j")
+
+[node name="Icon" type="TextureRect" parent="PageContainer/Page/Tabs/Games/GridContainer/None11"]
+layout_mode = 0
+offset_top = 113.0
+offset_right = 16.0
+offset_bottom = 129.0
+texture = ExtResource("14_u3tfh")
+
+[node name="Title" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None11"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 107.0
+offset_right = 37.0
+offset_bottom = 125.0
+text = "???"
+label_settings = SubResource("LabelSettings_o478w")
+
+[node name="CreatorLabel" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None11"]
+layout_mode = 0
+offset_top = 130.0
+offset_right = 36.0
+offset_bottom = 143.0
+text = "Creator:"
+label_settings = SubResource("LabelSettings_0vd6n")
+
+[node name="Creator" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None11"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 130.0
+offset_right = 53.0
+offset_bottom = 143.0
+text = "???"
+label_settings = SubResource("LabelSettings_gmrjy")
+
+[node name="PlayerCount" type="Label" parent="PageContainer/Page/Tabs/Games/GridContainer/None11"]
+layout_mode = 0
+offset_top = 142.0
+offset_right = 65.0
+offset_bottom = 155.0
+text = "0 player online"
+label_settings = SubResource("LabelSettings_m6t73")
+
+[node name="My Character" type="Control" parent="PageContainer/Page/Tabs"]
+visible = false
+anchors_preset = 0
+offset_left = 190.0
+offset_top = 225.0
+offset_right = 1090.0
+offset_bottom = 1128.0
+
+[node name="TabPanel" type="Panel" parent="PageContainer/Page/Tabs/My Character"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 29.0
+offset_right = 886.0
+offset_bottom = 706.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_jc82x")
+
+[node name="LabelSettings" type="Label" parent="PageContainer/Page/Tabs/My Character/TabPanel"]
+layout_mode = 0
+offset_left = 529.0
+offset_top = 46.0
+offset_right = 649.0
+offset_bottom = 90.0
+text = "Settings"
+label_settings = SubResource("LabelSettings_uqbl0")
+
+[node name="CharacterTab" type="Panel" parent="PageContainer/Page/Tabs/My Character/TabPanel"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 90.0
+offset_right = 278.0
+offset_bottom = 364.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_0qvfx")
+
+[node name="LabelAvatar" type="Label" parent="PageContainer/Page/Tabs/My Character/TabPanel/CharacterTab"]
+layout_mode = 0
+offset_left = 61.0
+offset_top = -44.0
+offset_right = 160.0
+text = "Avatar"
+label_settings = SubResource("LabelSettings_m3wuy")
+
+[node name="Bf" type="AnimatedSprite2D" parent="PageContainer/Page/Tabs/My Character/TabPanel/CharacterTab"]
+position = Vector2(109, 136)
+scale = Vector2(0.509685, 0.509685)
+sprite_frames = ExtResource("22_85lcw")
+animation = &"idle"
+
+[node name="SettingsContainer" type="VBoxContainer" parent="PageContainer/Page/Tabs/My Character/TabPanel"]
+layout_mode = 0
+offset_left = 416.0
+offset_top = 93.0
+offset_right = 766.0
+offset_bottom = 655.0
+
+[node name="Downscroll" type="Control" parent="PageContainer/Page/Tabs/My Character/TabPanel/SettingsContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+script = ExtResource("19_8xe4x")
+setting = "downScroll"
+
+[node name="Label" type="Label" parent="PageContainer/Page/Tabs/My Character/TabPanel/SettingsContainer/Downscroll"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Downscroll"
+label_settings = SubResource("LabelSettings_wuwc2")
+
+[node name="CheckBox" type="CheckBox" parent="PageContainer/Page/Tabs/My Character/TabPanel/SettingsContainer/Downscroll"]
+layout_mode = 0
+offset_left = 121.0
+offset_right = 145.0
+offset_bottom = 24.0
+
+[node name="Middlescroll" type="Control" parent="PageContainer/Page/Tabs/My Character/TabPanel/SettingsContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+script = ExtResource("19_8xe4x")
+setting = "middleScroll"
+
+[node name="Label" type="Label" parent="PageContainer/Page/Tabs/My Character/TabPanel/SettingsContainer/Middlescroll"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Middlescroll"
+label_settings = SubResource("LabelSettings_cwp3x")
+
+[node name="CheckBox" type="CheckBox" parent="PageContainer/Page/Tabs/My Character/TabPanel/SettingsContainer/Middlescroll"]
+layout_mode = 0
+offset_left = 121.0
+offset_right = 145.0
+offset_bottom = 24.0
+
+[node name="GhostTapping" type="Control" parent="PageContainer/Page/Tabs/My Character/TabPanel/SettingsContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+script = ExtResource("19_8xe4x")
+setting = "ghostTapping"
+
+[node name="Label" type="Label" parent="PageContainer/Page/Tabs/My Character/TabPanel/SettingsContainer/GhostTapping"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Ghost-Tapping"
+label_settings = SubResource("LabelSettings_y1b56")
+
+[node name="CheckBox" type="CheckBox" parent="PageContainer/Page/Tabs/My Character/TabPanel/SettingsContainer/GhostTapping"]
+layout_mode = 0
+offset_left = 121.0
+offset_right = 145.0
+offset_bottom = 24.0
+
+[node name="Fps" type="Control" parent="PageContainer/Page/Tabs/My Character/TabPanel/SettingsContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+script = ExtResource("20_pdpow")
+setting = "fps"
+
+[node name="Label" type="Label" parent="PageContainer/Page/Tabs/My Character/TabPanel/SettingsContainer/Fps"]
+layout_mode = 0
+offset_right = 27.0
+offset_bottom = 23.0
+text = "Fps"
+label_settings = SubResource("LabelSettings_lcgrh")
+
+[node name="HSlider" type="HSlider" parent="PageContainer/Page/Tabs/My Character/TabPanel/SettingsContainer/Fps"]
+layout_mode = 0
+offset_left = 126.0
+offset_top = 5.0
+offset_right = 349.0
+offset_bottom = 21.0
+min_value = 60.0
+max_value = 1000.0
+value = 60.0
+
+[node name="Value" type="Label" parent="PageContainer/Page/Tabs/My Character/TabPanel/SettingsContainer/Fps"]
+layout_mode = 0
+offset_left = 367.0
+offset_right = 386.0
+offset_bottom = 23.0
+text = "60"
+label_settings = SubResource("LabelSettings_3u8aq")
+
+[node name="Vsync" type="Control" parent="PageContainer/Page/Tabs/My Character/TabPanel/SettingsContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+script = ExtResource("19_8xe4x")
+setting = "vSync"
+
+[node name="Label" type="Label" parent="PageContainer/Page/Tabs/My Character/TabPanel/SettingsContainer/Vsync"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "V-Sync"
+label_settings = SubResource("LabelSettings_tg72v")
+
+[node name="CheckBox" type="CheckBox" parent="PageContainer/Page/Tabs/My Character/TabPanel/SettingsContainer/Vsync"]
+layout_mode = 0
+offset_left = 121.0
+offset_right = 145.0
+offset_bottom = 24.0
+
+[node name="Fullscreen" type="Control" parent="PageContainer/Page/Tabs/My Character/TabPanel/SettingsContainer"]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+script = ExtResource("19_8xe4x")
+setting = "fullscreen"
+
+[node name="Label" type="Label" parent="PageContainer/Page/Tabs/My Character/TabPanel/SettingsContainer/Fullscreen"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Fullscreen"
+label_settings = SubResource("LabelSettings_0gikd")
+
+[node name="CheckBox" type="CheckBox" parent="PageContainer/Page/Tabs/My Character/TabPanel/SettingsContainer/Fullscreen"]
+layout_mode = 0
+offset_left = 121.0
+offset_right = 145.0
+offset_bottom = 24.0
+
+[node name="LeftArrow" type="Control" parent="PageContainer/Page/Tabs/My Character/TabPanel/SettingsContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+script = ExtResource("22_tp0qf")
+setting = "arrowLeft"
+
+[node name="Label" type="Label" parent="PageContainer/Page/Tabs/My Character/TabPanel/SettingsContainer/LeftArrow"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Left Arrow"
+label_settings = SubResource("LabelSettings_qfoi4")
+
+[node name="Panel" type="Panel" parent="PageContainer/Page/Tabs/My Character/TabPanel/SettingsContainer/LeftArrow"]
+layout_mode = 0
+offset_left = 126.0
+offset_top = 4.0
+offset_right = 188.0
+offset_bottom = 21.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_oif2u")
+
+[node name="Control" type="Label" parent="PageContainer/Page/Tabs/My Character/TabPanel/SettingsContainer/LeftArrow"]
+layout_mode = 0
+offset_left = 152.0
+offset_top = 1.0
+offset_right = 163.0
+offset_bottom = 24.0
+text = "A"
+label_settings = SubResource("LabelSettings_80v5y")
+
+[node name="DownArrow" type="Control" parent="PageContainer/Page/Tabs/My Character/TabPanel/SettingsContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+script = ExtResource("22_tp0qf")
+setting = "arrowDown"
+
+[node name="Label" type="Label" parent="PageContainer/Page/Tabs/My Character/TabPanel/SettingsContainer/DownArrow"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Down Arrow"
+label_settings = SubResource("LabelSettings_sa174")
+
+[node name="Panel" type="Panel" parent="PageContainer/Page/Tabs/My Character/TabPanel/SettingsContainer/DownArrow"]
+layout_mode = 0
+offset_left = 126.0
+offset_top = 4.0
+offset_right = 188.0
+offset_bottom = 21.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_mnbot")
+
+[node name="Control" type="Label" parent="PageContainer/Page/Tabs/My Character/TabPanel/SettingsContainer/DownArrow"]
+layout_mode = 0
+offset_left = 152.0
+offset_top = 1.0
+offset_right = 163.0
+offset_bottom = 24.0
+text = "A"
+label_settings = SubResource("LabelSettings_e3bi8")
+
+[node name="UpArrow" type="Control" parent="PageContainer/Page/Tabs/My Character/TabPanel/SettingsContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+script = ExtResource("22_tp0qf")
+setting = "arrowUp"
+
+[node name="Label" type="Label" parent="PageContainer/Page/Tabs/My Character/TabPanel/SettingsContainer/UpArrow"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Up Arrow"
+label_settings = SubResource("LabelSettings_dbpit")
+
+[node name="Panel" type="Panel" parent="PageContainer/Page/Tabs/My Character/TabPanel/SettingsContainer/UpArrow"]
+layout_mode = 0
+offset_left = 126.0
+offset_top = 4.0
+offset_right = 188.0
+offset_bottom = 21.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_n82ea")
+
+[node name="Control" type="Label" parent="PageContainer/Page/Tabs/My Character/TabPanel/SettingsContainer/UpArrow"]
+layout_mode = 0
+offset_left = 152.0
+offset_top = 1.0
+offset_right = 163.0
+offset_bottom = 24.0
+text = "A"
+label_settings = SubResource("LabelSettings_p4hlm")
+
+[node name="RightArrow" type="Control" parent="PageContainer/Page/Tabs/My Character/TabPanel/SettingsContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+script = ExtResource("22_tp0qf")
+setting = "arrowRight"
+
+[node name="Label" type="Label" parent="PageContainer/Page/Tabs/My Character/TabPanel/SettingsContainer/RightArrow"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Right Arrow"
+label_settings = SubResource("LabelSettings_4pfdq")
+
+[node name="Panel" type="Panel" parent="PageContainer/Page/Tabs/My Character/TabPanel/SettingsContainer/RightArrow"]
+layout_mode = 0
+offset_left = 126.0
+offset_top = 4.0
+offset_right = 188.0
+offset_bottom = 21.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_13dqy")
+
+[node name="Control" type="Label" parent="PageContainer/Page/Tabs/My Character/TabPanel/SettingsContainer/RightArrow"]
+layout_mode = 0
+offset_left = 152.0
+offset_top = 1.0
+offset_right = 163.0
+offset_bottom = 24.0
+text = "A"
+label_settings = SubResource("LabelSettings_687sh")
+
+[node name="Blog" type="Control" parent="PageContainer/Page/Tabs"]
+visible = false
+anchors_preset = 0
+offset_left = 190.0
+offset_top = 225.0
+offset_right = 1090.0
+offset_bottom = 1128.0
+
+[node name="TabPanel" type="Panel" parent="PageContainer/Page/Tabs/Blog"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 29.0
+offset_right = 886.0
+offset_bottom = 404.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_4nmy3")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PageContainer/Page/Tabs/Blog/TabPanel"]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 6.0
+offset_right = 868.0
+offset_bottom = 418.0
+
+[node name="Label" type="Label" parent="PageContainer/Page/Tabs/Blog/TabPanel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+text = "3/19/2010 -- All users are advised to refrain from visiting any Roblox games. Roblox servers are currently
+                       being compromised by unknown IPs and we strongly recommend everyone to log off.
+"
+label_settings = SubResource("LabelSettings_65ijt")
+
+[node name="Label2" type="Label" parent="PageContainer/Page/Tabs/Blog/TabPanel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+text = "3/18/2010 -- We're working on a fix to a malicious account ID randomly joining games transmitting
+                       inappropriate content. Roblox will be down temporarily, please stick with us! X_X
+"
+label_settings = SubResource("LabelSettings_piqqh")
+
+[node name="Help" type="Control" parent="PageContainer/Page/Tabs"]
+visible = false
+anchors_preset = 0
+offset_left = 190.0
+offset_top = 225.0
+offset_right = 1090.0
+offset_bottom = 1128.0
+
+[node name="TextureRect" type="TextureRect" parent="PageContainer/Page/Tabs/Help"]
+layout_mode = 0
+offset_left = 614.0
+offset_top = 89.0
+offset_right = 839.0
+offset_bottom = 323.0
+texture = ExtResource("18_kfo77")
+
+[node name="Title" type="Label" parent="PageContainer/Page/Tabs/Help/TextureRect"]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 21.0
+offset_right = 166.0
+offset_bottom = 44.0
+text = "?"
+label_settings = SubResource("LabelSettings_s656w")
+
+[node name="TabPanel" type="Panel" parent="PageContainer/Page/Tabs/Help"]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 30.0
+offset_right = 576.0
+offset_bottom = 694.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_0yrg1")
+
+[node name="Title" type="Label" parent="PageContainer/Page/Tabs/Help/TabPanel"]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 15.0
+offset_right = 162.0
+offset_bottom = 38.0
+text = "Data Not Available"
+label_settings = SubResource("LabelSettings_es7mw")
+
+[node name="Text" type="Label" parent="PageContainer/Page/Tabs/Help/TabPanel"]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 59.0
+offset_right = 549.0
+offset_bottom = 160.0
+text = "The data you were trying to access could not be found. It may be due
+to another user deleting the data or a system error. If you know the
+data is not deleted but cannot access it, please look at our support 
+page."
+label_settings = SubResource("LabelSettings_2r30a")
+
+[node name="Black" type="ColorRect" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Bar" type="ColorRect" parent="CanvasLayer"]
+offset_right = 1280.0
+offset_bottom = 360.0
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Bar2" type="ColorRect" parent="CanvasLayer"]
+offset_top = 360.0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+material = SubResource("ShaderMaterial_8q2dn")
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2

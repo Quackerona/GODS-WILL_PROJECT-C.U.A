@@ -1,0 +1,22 @@
+[gd_resource type="SpriteFrames" load_steps=4 format=3 uid="uid://bwcg0bh7xs30q"]
+
+[ext_resource type="Texture2D" uid="uid://b43on160mjitr" path="res://assets/images/gameplay/purgatory/ghosts/ghost1 1.png" id="1_fnjlt"]
+[ext_resource type="Texture2D" uid="uid://lhj5yot3txa" path="res://assets/images/gameplay/purgatory/ghosts/ghost1 2.png" id="2_8k67o"]
+[ext_resource type="Texture2D" uid="uid://dthr078k8jitw" path="res://assets/images/gameplay/purgatory/ghosts/ghost1 3.png" id="3_qekv6"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_fnjlt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_8k67o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_qekv6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]

@@ -1,0 +1,36 @@
+[gd_resource type="SpriteFrames" load_steps=5 format=3 uid="uid://v682w4bvxr02"]
+
+[ext_resource type="Texture2D" uid="uid://l1ud1rdt4jmg" path="res://assets/images/noteSkins/default/right confirm0001.png" id="1_m58e7"]
+[ext_resource type="Texture2D" uid="uid://b44j08gng4blj" path="res://assets/images/noteSkins/default/right confirm0002.png" id="2_gtdhb"]
+[ext_resource type="Texture2D" uid="uid://0dpyqne0xmli" path="res://assets/images/noteSkins/default/right press.png" id="3_fyo01"]
+[ext_resource type="Texture2D" uid="uid://bm1tvctq5747u" path="res://assets/images/noteSkins/default/arrowRIGHT.png" id="9_sc5ic"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_m58e7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_gtdhb")
+}],
+"loop": false,
+"name": &"confirm",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_fyo01")
+}],
+"loop": false,
+"name": &"pressed",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_sc5ic")
+}],
+"loop": false,
+"name": &"static",
+"speed": 24.0
+}]

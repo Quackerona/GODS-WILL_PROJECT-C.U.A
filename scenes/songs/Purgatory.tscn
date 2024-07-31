@@ -1,0 +1,502 @@
+[gd_scene load_steps=44 format=3 uid="uid://b1qjuyosbwiyp"]
+
+[ext_resource type="Script" path="res://source/gameplay/GameController.cs" id="1_o5248"]
+[ext_resource type="AudioStream" uid="uid://37c6qs8dqjlk" path="res://assets/songs/purgatory/Inst.ogg" id="2_y5152"]
+[ext_resource type="AudioStream" uid="uid://o80hiacw3oac" path="res://assets/songs/purgatory/Voices1.ogg" id="3_qjiuf"]
+[ext_resource type="Texture2D" uid="uid://ctvq6fqw5upy6" path="res://assets/images/backgrounds/purgatory/skybox.png" id="3_ypwbf"]
+[ext_resource type="Script" path="res://source/gameplay/PauseController.cs" id="4_i8ia0"]
+[ext_resource type="AudioStream" uid="uid://cd0swtf4j2xvn" path="res://assets/songs/purgatory/Voices2.ogg" id="4_wwjju"]
+[ext_resource type="Texture2D" uid="uid://cg8jyhrm8cx0j" path="res://assets/images/backgrounds/purgatory/bg.png" id="4_yh78g"]
+[ext_resource type="SpriteFrames" uid="uid://bu7gydd33d7ql" path="res://assets/images/characters/johndoe/anims.tres" id="5_1u5qb"]
+[ext_resource type="AudioStream" uid="uid://b3jcl5haq5enp" path="res://assets/sounds/pauseTheme.ogg" id="5_pa3bu"]
+[ext_resource type="Script" path="res://source/gameplay/events/PurgatoryEvent.cs" id="6_1ocec"]
+[ext_resource type="Script" path="res://source/gameplay/Character.cs" id="6_c2ugm"]
+[ext_resource type="Shader" path="res://assets/shaders/Checker.gdshader" id="7_mg3fa"]
+[ext_resource type="Shader" path="res://assets/shaders/Scroll.gdshader" id="7_ptatk"]
+[ext_resource type="SpriteFrames" uid="uid://dwvba1heudptf" path="res://assets/images/characters/bf/anims.tres" id="7_yf2vb"]
+[ext_resource type="SpriteFrames" uid="uid://dvpaidp82krhd" path="res://assets/images/noteSkins/default/left.tres" id="8_0dlv4"]
+[ext_resource type="Script" path="res://source/gameplay/StrumNote.cs" id="9_qfo72"]
+[ext_resource type="SpriteFrames" uid="uid://cpn8ifihpxyct" path="res://assets/images/noteSkins/default/down.tres" id="10_pi5j8"]
+[ext_resource type="SpriteFrames" uid="uid://cl811qy2ltn6q" path="res://assets/images/noteSkins/default/up.tres" id="11_crwbn"]
+[ext_resource type="SpriteFrames" uid="uid://bwcg0bh7xs30q" path="res://assets/images/gameplay/purgatory/ghosts/ghost1.tres" id="11_jii3r"]
+[ext_resource type="SpriteFrames" uid="uid://v682w4bvxr02" path="res://assets/images/noteSkins/default/right.tres" id="12_dqt02"]
+[ext_resource type="SpriteFrames" uid="uid://bpqywxk28ftbu" path="res://assets/images/gameplay/purgatory/ghosts/ghost2.tres" id="12_vqa8b"]
+[ext_resource type="Texture2D" uid="uid://bh23rn2fv5a0b" path="res://assets/images/healthbars/default/healthBar.png" id="13_smxwt"]
+[ext_resource type="Texture2D" uid="uid://b13t72iorx2v8" path="res://assets/images/healthbars/default/healthBarFull.png" id="14_iwd3t"]
+[ext_resource type="Texture2D" uid="uid://dsdtnm71dni41" path="res://assets/images/gameplay/purgatory/oldBuild.png" id="14_ukfkt"]
+[ext_resource type="Shader" path="res://assets/shaders/Color.gdshader" id="17_8l5hh"]
+[ext_resource type="Shader" path="res://assets/shaders/Pc.gdshader" id="18_g5iyq"]
+[ext_resource type="Script" path="res://source/gameplay/PauseButton.cs" id="19_2kwdu"]
+[ext_resource type="Shader" path="res://assets/shaders/Bloom.gdshader" id="25_c7tju"]
+[ext_resource type="Script" path="res://source/menu/options/Number.cs" id="27_ttb2f"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_577bi"]
+shader = ExtResource("7_mg3fa")
+shader_parameter/cells = 56.0
+shader_parameter/speed = 0.03
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fwksl"]
+shader = ExtResource("7_ptatk")
+shader_parameter/speed = Vector2(0.03, 0)
+
+[sub_resource type="LabelSettings" id="LabelSettings_0oq5t"]
+font_size = 20
+outline_size = 12
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aobx1"]
+bg_color = Color(0.176471, 0.176471, 0.176471, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="LabelSettings" id="LabelSettings_4r0c1"]
+font_size = 31
+outline_size = 2
+
+[sub_resource type="LabelSettings" id="LabelSettings_x7iss"]
+font_size = 15
+
+[sub_resource type="LabelSettings" id="LabelSettings_hwxbj"]
+font_size = 15
+
+[sub_resource type="LabelSettings" id="LabelSettings_k0plx"]
+font_size = 15
+
+[sub_resource type="LabelSettings" id="LabelSettings_iexj7"]
+font_size = 15
+
+[sub_resource type="LabelSettings" id="LabelSettings_6sjof"]
+font_size = 15
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_ndkuf"]
+color = Color(0.34902, 0.662745, 0.886275, 1)
+thickness = 8
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tthqh"]
+shader = ExtResource("25_c7tju")
+shader_parameter/intensity = null
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6762k"]
+shader = ExtResource("17_8l5hh")
+shader_parameter/brightness = -0.1
+shader_parameter/contrast = 2.5
+shader_parameter/saturation = 0.6
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_h38fx"]
+shader = ExtResource("18_g5iyq")
+shader_parameter/curvature = 1.0
+shader_parameter/smear = 1.0
+shader_parameter/scanline_count = 300.0
+shader_parameter/blur_samples = 10
+
+[node name="Purgatory" type="Node2D"]
+script = ExtResource("1_o5248")
+
+[node name="Inst" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_y5152")
+
+[node name="Voices1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_qjiuf")
+
+[node name="Voices2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_wwjju")
+
+[node name="Pause" type="AudioStreamPlayer" parent="."]
+process_mode = 3
+stream = ExtResource("5_pa3bu")
+
+[node name="PauseHandler" type="Node" parent="."]
+process_mode = 3
+script = ExtResource("4_i8ia0")
+
+[node name="EventHandler" type="Node" parent="."]
+script = ExtResource("6_1ocec")
+
+[node name="GameViewportContainer" type="SubViewportContainer" parent="."]
+offset_right = 1280.0
+offset_bottom = 720.0
+
+[node name="GameViewport" type="SubViewport" parent="GameViewportContainer"]
+handle_input_locally = false
+size = Vector2i(1280, 720)
+render_target_update_mode = 4
+
+[node name="Camera2D" type="Camera2D" parent="GameViewportContainer/GameViewport"]
+ignore_rotation = false
+zoom = Vector2(11, 11)
+position_smoothing_enabled = true
+position_smoothing_speed = 10.0
+
+[node name="Checker" type="ColorRect" parent="GameViewportContainer/GameViewport"]
+material = SubResource("ShaderMaterial_577bi")
+offset_left = -320.0
+offset_top = -600.0
+offset_right = 1600.0
+offset_bottom = 1320.0
+
+[node name="Sky" type="Sprite2D" parent="GameViewportContainer/GameViewport"]
+material = SubResource("ShaderMaterial_fwksl")
+position = Vector2(640, 227)
+texture = ExtResource("3_ypwbf")
+
+[node name="Bg" type="Sprite2D" parent="GameViewportContainer/GameViewport"]
+position = Vector2(640, 360)
+texture = ExtResource("4_yh78g")
+
+[node name="Ghosts" type="Node2D" parent="GameViewportContainer/GameViewport"]
+process_mode = 4
+visible = false
+
+[node name="Ghost" type="AnimatedSprite2D" parent="GameViewportContainer/GameViewport/Ghosts"]
+position = Vector2(-61, 369)
+scale = Vector2(0.4, 0.4)
+sprite_frames = ExtResource("11_jii3r")
+autoplay = "default"
+
+[node name="Ghost2" type="AnimatedSprite2D" parent="GameViewportContainer/GameViewport/Ghosts"]
+position = Vector2(79, 369)
+scale = Vector2(0.4, 0.4)
+sprite_frames = ExtResource("12_vqa8b")
+autoplay = "default"
+
+[node name="Ghost3" type="AnimatedSprite2D" parent="GameViewportContainer/GameViewport/Ghosts"]
+position = Vector2(219, 369)
+scale = Vector2(0.4, 0.4)
+sprite_frames = ExtResource("11_jii3r")
+autoplay = "default"
+
+[node name="Ghost4" type="AnimatedSprite2D" parent="GameViewportContainer/GameViewport/Ghosts"]
+position = Vector2(359, 369)
+scale = Vector2(0.4, 0.4)
+sprite_frames = ExtResource("12_vqa8b")
+autoplay = "default"
+
+[node name="Ghost5" type="AnimatedSprite2D" parent="GameViewportContainer/GameViewport/Ghosts"]
+position = Vector2(500, 369)
+scale = Vector2(0.4, 0.4)
+sprite_frames = ExtResource("11_jii3r")
+autoplay = "default"
+
+[node name="Ghost6" type="AnimatedSprite2D" parent="GameViewportContainer/GameViewport/Ghosts"]
+position = Vector2(640, 369)
+scale = Vector2(0.4, 0.4)
+sprite_frames = ExtResource("12_vqa8b")
+autoplay = "default"
+
+[node name="Ghost7" type="AnimatedSprite2D" parent="GameViewportContainer/GameViewport/Ghosts"]
+position = Vector2(780, 369)
+scale = Vector2(0.4, 0.4)
+sprite_frames = ExtResource("11_jii3r")
+autoplay = "default"
+
+[node name="Ghost8" type="AnimatedSprite2D" parent="GameViewportContainer/GameViewport/Ghosts"]
+position = Vector2(920, 369)
+scale = Vector2(0.4, 0.4)
+sprite_frames = ExtResource("12_vqa8b")
+autoplay = "default"
+
+[node name="Ghost9" type="AnimatedSprite2D" parent="GameViewportContainer/GameViewport/Ghosts"]
+position = Vector2(1066, 369)
+scale = Vector2(0.4, 0.4)
+sprite_frames = ExtResource("11_jii3r")
+autoplay = "default"
+
+[node name="Ghost10" type="AnimatedSprite2D" parent="GameViewportContainer/GameViewport/Ghosts"]
+position = Vector2(1206, 369)
+scale = Vector2(0.4, 0.4)
+sprite_frames = ExtResource("12_vqa8b")
+autoplay = "default"
+
+[node name="Ghost11" type="AnimatedSprite2D" parent="GameViewportContainer/GameViewport/Ghosts"]
+position = Vector2(1346, 369)
+scale = Vector2(0.4, 0.4)
+sprite_frames = ExtResource("11_jii3r")
+autoplay = "default"
+
+[node name="Ghost12" type="AnimatedSprite2D" parent="GameViewportContainer/GameViewport/Ghosts"]
+position = Vector2(1486, 369)
+scale = Vector2(0.4, 0.4)
+sprite_frames = ExtResource("12_vqa8b")
+autoplay = "default"
+
+[node name="Opponent" type="AnimatedSprite2D" parent="GameViewportContainer/GameViewport"]
+position = Vector2(347, 450)
+scale = Vector2(0.6, 0.6)
+sprite_frames = ExtResource("5_1u5qb")
+animation = &"idle"
+script = ExtResource("6_c2ugm")
+noMisses = true
+
+[node name="Player" type="AnimatedSprite2D" parent="GameViewportContainer/GameViewport"]
+position = Vector2(912, 450)
+scale = Vector2(0.6, 0.6)
+sprite_frames = ExtResource("7_yf2vb")
+animation = &"idle"
+script = ExtResource("6_c2ugm")
+noMisses = true
+
+[node name="BeginningLayer" type="CanvasLayer" parent="GameViewportContainer/GameViewport"]
+
+[node name="Black" type="ColorRect" parent="GameViewportContainer/GameViewport/BeginningLayer"]
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(0, 0, 0, 1)
+
+[node name="Portrait" type="Sprite2D" parent="GameViewportContainer/GameViewport/BeginningLayer"]
+position = Vector2(640, 360)
+texture = ExtResource("14_ukfkt")
+
+[node name="HudViewportContainer" type="SubViewportContainer" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_right = 1280.0
+offset_bottom = 720.0
+
+[node name="HudViewport" type="SubViewport" parent="HudViewportContainer"]
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(1280, 720)
+render_target_update_mode = 4
+
+[node name="Camera2D" type="Camera2D" parent="HudViewportContainer/HudViewport"]
+position = Vector2(640, 360)
+ignore_rotation = false
+
+[node name="StrumNotes" type="Node" parent="HudViewportContainer/HudViewport"]
+
+[node name="PlrLeft" type="AnimatedSprite2D" parent="HudViewportContainer/HudViewport/StrumNotes"]
+position = Vector2(792, 620)
+scale = Vector2(0.7, 0.7)
+sprite_frames = ExtResource("8_0dlv4")
+animation = &"static"
+script = ExtResource("9_qfo72")
+action = "arrowLeft"
+
+[node name="PlrDown" type="AnimatedSprite2D" parent="HudViewportContainer/HudViewport/StrumNotes"]
+position = Vector2(907, 620)
+scale = Vector2(0.7, 0.7)
+sprite_frames = ExtResource("10_pi5j8")
+animation = &"static"
+script = ExtResource("9_qfo72")
+action = "arrowDown"
+
+[node name="PlrUp" type="AnimatedSprite2D" parent="HudViewportContainer/HudViewport/StrumNotes"]
+position = Vector2(1020, 620)
+scale = Vector2(0.7, 0.7)
+sprite_frames = ExtResource("11_crwbn")
+animation = &"static"
+script = ExtResource("9_qfo72")
+action = "arrowUp"
+
+[node name="PlrRight" type="AnimatedSprite2D" parent="HudViewportContainer/HudViewport/StrumNotes"]
+position = Vector2(1133, 620)
+scale = Vector2(0.7, 0.7)
+sprite_frames = ExtResource("12_dqt02")
+animation = &"static"
+script = ExtResource("9_qfo72")
+action = "arrowRight"
+
+[node name="OppLeft" type="AnimatedSprite2D" parent="HudViewportContainer/HudViewport/StrumNotes"]
+position = Vector2(147, 620)
+scale = Vector2(0.7, 0.7)
+sprite_frames = ExtResource("8_0dlv4")
+animation = &"static"
+script = ExtResource("9_qfo72")
+action = "arrowLeft"
+auto = true
+
+[node name="OppDown" type="AnimatedSprite2D" parent="HudViewportContainer/HudViewport/StrumNotes"]
+position = Vector2(262, 620)
+scale = Vector2(0.7, 0.7)
+sprite_frames = ExtResource("10_pi5j8")
+animation = &"static"
+script = ExtResource("9_qfo72")
+action = "arrowDown"
+auto = true
+
+[node name="OppUp" type="AnimatedSprite2D" parent="HudViewportContainer/HudViewport/StrumNotes"]
+position = Vector2(375, 620)
+scale = Vector2(0.7, 0.7)
+sprite_frames = ExtResource("11_crwbn")
+animation = &"static"
+script = ExtResource("9_qfo72")
+action = "arrowUp"
+auto = true
+
+[node name="OppRight" type="AnimatedSprite2D" parent="HudViewportContainer/HudViewport/StrumNotes"]
+position = Vector2(488, 620)
+scale = Vector2(0.7, 0.7)
+sprite_frames = ExtResource("12_dqt02")
+animation = &"static"
+script = ExtResource("9_qfo72")
+action = "arrowRight"
+auto = true
+
+[node name="Notes" type="Node" parent="HudViewportContainer/HudViewport"]
+
+[node name="Healthbar" type="TextureProgressBar" parent="HudViewportContainer/HudViewport"]
+offset_left = 339.5
+offset_top = 50.0
+offset_right = 940.5
+offset_bottom = 69.0
+max_value = 2.0
+step = 0.0
+value = 1.0
+fill_mode = 1
+texture_under = ExtResource("13_smxwt")
+texture_progress = ExtResource("14_iwd3t")
+tint_progress = Color(1, 0, 0, 1)
+
+[node name="Score" type="Label" parent="HudViewportContainer/HudViewport"]
+offset_left = 474.0
+offset_top = 80.0
+offset_right = 806.0
+offset_bottom = 108.0
+text = "Score: 0 | Accuracy: 0% | Misses: 0"
+label_settings = SubResource("LabelSettings_0oq5t")
+
+[node name="PauseViewportContainer" type="SubViewportContainer" parent="."]
+process_mode = 2
+visible = false
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="PauseViewport" type="SubViewport" parent="PauseViewportContainer"]
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(1280, 720)
+render_target_update_mode = 0
+
+[node name="Panel" type="Panel" parent="PauseViewportContainer/PauseViewport"]
+offset_left = 440.0
+offset_top = 185.0
+offset_right = 840.0
+offset_bottom = 535.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_aobx1")
+
+[node name="Label" type="Label" parent="PauseViewportContainer/PauseViewport/Panel"]
+layout_mode = 0
+offset_left = 108.0
+offset_top = 20.0
+offset_right = 292.0
+offset_bottom = 64.0
+text = "Game Menu"
+label_settings = SubResource("LabelSettings_4r0c1")
+
+[node name="ButtonContainer" type="VBoxContainer" parent="PauseViewportContainer/PauseViewport/Panel"]
+layout_mode = 0
+offset_top = 47.0
+offset_right = 400.0
+offset_bottom = 350.0
+alignment = 1
+
+[node name="Resume" type="Control" parent="PauseViewportContainer/PauseViewport/Panel/ButtonContainer"]
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 2
+script = ExtResource("19_2kwdu")
+
+[node name="Label" type="Label" parent="PauseViewportContainer/PauseViewport/Panel/ButtonContainer/Resume"]
+layout_mode = 2
+offset_left = 147.5
+offset_right = 252.5
+offset_bottom = 22.0
+mouse_filter = 0
+text = "Resume Game"
+label_settings = SubResource("LabelSettings_x7iss")
+
+[node name="Restart" type="Control" parent="PauseViewportContainer/PauseViewport/Panel/ButtonContainer"]
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 2
+script = ExtResource("19_2kwdu")
+
+[node name="Label" type="Label" parent="PauseViewportContainer/PauseViewport/Panel/ButtonContainer/Restart"]
+layout_mode = 2
+offset_left = 150.5
+offset_right = 249.5
+offset_bottom = 22.0
+mouse_filter = 0
+text = "Restart Game"
+label_settings = SubResource("LabelSettings_hwxbj")
+
+[node name="Botplay" type="Control" parent="PauseViewportContainer/PauseViewport/Panel/ButtonContainer"]
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 2
+script = ExtResource("19_2kwdu")
+
+[node name="Label" type="Label" parent="PauseViewportContainer/PauseViewport/Panel/ButtonContainer/Botplay"]
+layout_mode = 2
+offset_left = 172.0
+offset_right = 228.0
+offset_bottom = 22.0
+mouse_filter = 0
+text = "Botplay"
+label_settings = SubResource("LabelSettings_k0plx")
+
+[node name="Quit" type="Control" parent="PauseViewportContainer/PauseViewport/Panel/ButtonContainer"]
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 2
+script = ExtResource("19_2kwdu")
+
+[node name="Label" type="Label" parent="PauseViewportContainer/PauseViewport/Panel/ButtonContainer/Quit"]
+layout_mode = 2
+offset_left = 184.0
+offset_right = 216.0
+offset_bottom = 22.0
+mouse_filter = 0
+text = "Quit"
+label_settings = SubResource("LabelSettings_iexj7")
+
+[node name="Volume" type="Control" parent="PauseViewportContainer/PauseViewport/Panel/ButtonContainer"]
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 2
+script = ExtResource("27_ttb2f")
+numType = 1
+setting = "songVolume"
+
+[node name="Label" type="Label" parent="PauseViewportContainer/PauseViewport/Panel/ButtonContainer/Volume"]
+layout_mode = 2
+offset_left = 75.5
+offset_right = 131.5
+offset_bottom = 22.0
+text = "Volume"
+label_settings = SubResource("LabelSettings_6sjof")
+
+[node name="HSlider" type="HSlider" parent="PauseViewportContainer/PauseViewport/Panel/ButtonContainer/Volume"]
+layout_mode = 0
+offset_left = 145.5
+offset_top = 4.0
+offset_right = 324.5
+offset_bottom = 20.0
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_ndkuf")
+min_value = -80.0
+max_value = 0.0
+step = 0.0
+
+[node name="BloomShader" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="BloomShader"]
+material = SubResource("ShaderMaterial_tthqh")
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+
+[node name="SaturationShader" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="SaturationShader"]
+material = SubResource("ShaderMaterial_6762k")
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+
+[node name="PcShader" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="PcShader"]
+material = SubResource("ShaderMaterial_h38fx")
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
