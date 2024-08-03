@@ -75,7 +75,7 @@ public partial class PauseController : Node
 		pauseMusic.Stop();
 
 		Resume();
-		for (int i = 0; i < 4; i++)
+		for (int i = 0; i < SongUtility.SONG.keys; i++)
 		{
 			StrumNote strumNote = (StrumNote)GameController.instance.strumNotes[i];
 			

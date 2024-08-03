@@ -200,7 +200,7 @@ public partial class GameController : MusicModule
 
 				if (JsonUtility.userData.middleScroll)
 				{
-				    if (noteScript.noteData.id < 4)
+				    if (noteScript.noteData.id < SongUtility.SONG.keys)
 						note.Show();
 					else
 						note.Hide();

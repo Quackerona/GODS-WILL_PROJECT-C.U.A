@@ -66,7 +66,7 @@ public partial class StrumNote : AnimatedSprite2D
 
 	void GoodNoteHit()
 	{
-		if (hitableScript.noteData.id < 4)
+		if (hitableScript.noteData.id < SongUtility.SONG.keys)
 		{
 		    SongUtility.health += 0.06f;
 
@@ -80,7 +80,7 @@ public partial class StrumNote : AnimatedSprite2D
 
 	public void MissNote()
 	{
-		if (hitableScript.noteData.id < 4)
+		if (hitableScript.noteData.id < SongUtility.SONG.keys)
 		{
 			SongUtility.health -= 0.04f;
 			++SongUtility.misses;
@@ -104,8 +104,6 @@ public partial class StrumNote : AnimatedSprite2D
 		GameController.instance.voices1.VolumeDb = -80;
 
 		SetScore(false);
-
-		characterScript.PlayAnimation(action + "-miss");
 	}
 
 	void SetScore(bool includeFactor) // Super accurate, but too punishing. I should probably nerf it later.
